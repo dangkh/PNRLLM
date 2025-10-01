@@ -4,7 +4,7 @@
 ##  Requirements:
 
 ```
-torch, pydantic, 
+torch, pydantic, nltk, sklearn
 ```
 ##  Usage
 
@@ -59,10 +59,17 @@ backbones: str = 'PNRLLM'# [PNRLLM, NAML, LSTUR, NRMS]
 | NewsCL+LSTUR         
 
 
-## Dataset:
+## Dataset and Glove:
 ```
-MIND-SMALL, ADRESSA
-Link LLMs generated data: TBD
+MIND-SMALL LLMs generated data: 
+https://drive.google.com/file/d/1oJx2fmhAfcmtTAgU7TnTfG0ZWtcykz8N/view?usp=drive_link
+
+ADRESSA: TBD
+
+# Glove
+wget https://nlp.stanford.edu/data/glove.840B.300d.zip
+unzip glove.840B.300d.zip -d glove
+rm glove.840B.300d.zip
 ```
 
 ```
